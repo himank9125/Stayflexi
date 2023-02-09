@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import "./App.css";
 import Singlecard from "./Singlecard";
@@ -17,6 +19,7 @@ function App() {
       return a.Year - b.Year;
     });
     setMovies(arr);
+    toast.success("Movies sorted in ascending order");
   };
   const sortingDsc = () => {
     const arr = [...movies];
@@ -24,6 +27,7 @@ function App() {
       return b.Year - a.Year;
     });
     setMovies(arr);
+    toast.success("Movies sorted in descending  order");
   };
 
   const fetchMovies = () => {
@@ -32,10 +36,14 @@ function App() {
       .then((elm) => elm.json())
       .then((elm) => {
         setMovies(elm.Search);
-        console.log(elm.Search);
+        if (elm.Search) {
+          toast.success("Successfully Fetched");
+        } else {
+          toast.warning("No data Found, Please try with another keyword");
+        }
       })
       .catch((err) => {
-        console.log(err);
+        toast.error(err);
       });
   };
   useEffect(() => {
@@ -43,6 +51,7 @@ function App() {
   }, [search]);
   return (
     <div className="App">
+      <ToastContainer />
       <div className="topnav">
         <div className="search-container">
           <div className="searchbar">
