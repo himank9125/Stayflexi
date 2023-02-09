@@ -3,12 +3,7 @@ import img from "./images/img.jpg";
 
 export default function Detailview({ movie, setMovie }) {
   return (
-    <div
-      className="overlay"
-      onClick={() => {
-        setMovie("");
-      }}
-    >
+    <div className="overlay">
       <div className="model">
         <div
           className="close"

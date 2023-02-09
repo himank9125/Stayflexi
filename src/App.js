@@ -19,7 +19,7 @@ function App() {
       return a.Year - b.Year;
     });
     setMovies(arr);
-    toast.success("Movies sorted in ascending order");
+    toast.success("Items are sorted in ascending order");
   };
   const sortingDsc = () => {
     const arr = [...movies];
@@ -27,7 +27,7 @@ function App() {
       return b.Year - a.Year;
     });
     setMovies(arr);
-    toast.success("Movies sorted in descending  order");
+    toast.success("Items are sorted in descending  order");
   };
 
   const fetchMovies = () => {
