@@ -96,9 +96,9 @@ img {
   backdrop-filter: blur(18px);
 }
 .model {
-  height: 95%;
-  width: 70%;
-  background-color: white;
+  height: 65%;
+  width: 30%;
+  background-color: #9fa9a3;
   position: absolute;
   left: 0;
   right: 0;
@@ -133,4 +133,11 @@ img {
 .modeltitle {
   color: grey;
   font-size: 18px;
+}
+
+.modelcard h1 {
+  color: #daebe8;
+}
+.modelcard p {
+  color: #454140;
 }

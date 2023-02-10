@@ -19,11 +19,15 @@ export default function Detailview({ movie, setMovie }) {
             alt="mypic"
             style={{ width: "20%" }}
           />
+          <h1>{movie.Title}</h1>
           <p className="modeltitle">Release Year: {movie.Year}</p>
           <p className="modeltitle">Rating: {movie.imdbRating}</p>
 
-          <h1>{movie.Title}</h1>
-          <p>{movie.Plot}</p>
+          <p>
+            {movie.Plot.length >= 50
+              ? `${movie.Plot.substring(0, 400)}....`
+              : `${movie.Plot}`}
+          </p>
         </div>
       </div>
     </div>
