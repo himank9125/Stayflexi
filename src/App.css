@@ -34,7 +34,9 @@ body {
   border: none;
 }
 .buttons {
-  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 5px 0px;
 }
 .buttons > span {
   cursor: pointer;
