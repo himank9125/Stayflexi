@@ -1,3 +1,18 @@
+Home Page Layout, Having option tio search the movie and sorting buttons.
+
+![image](https://user-images.githubusercontent.com/65891506/218003986-0372f385-105a-43ea-afce-0060230b9358.png)
+
+View Details button on each card to check detailed view.
+
+
+![image](https://user-images.githubusercontent.com/65891506/218004214-72dd96c9-e236-4024-944c-bac8db41d3e9.png)
+
+
+After clicking view detail modal window will opened.
+To close it click on red cross (X) button located at right top corner.
+
+![image](https://user-images.githubusercontent.com/65891506/218004711-f83e836f-b242-4f12-9040-9a47cd131cb2.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
